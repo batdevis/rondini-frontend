@@ -5,5 +5,16 @@
     "meta": {
       "description": "Agriturismo Le Rondini stanze, appartamenti, alloggi a Limena, Padova"
     }
+  },
+  "pages": {
+    "welcome": {
+      "title": "Agriturismo Le Rondini",
+      "summary": "A small unexpected oasis of green silence, where the landscape evokes the old days, lapped by gentle Brenta river bends"
+    },
+    "prices": {
+      "slug": "prices",
+      "title": "Our prices",
+      "summary": "Prices are total per night"
+    }
   }
 }
