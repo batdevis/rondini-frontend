@@ -1,11 +1,14 @@
----
-layout: layouts/main
----
-{{>header }}
-
-{{>hero }}
-{{>hot}}
-{{>features}}
-{{>portfolio}}
-{{>blog}}
-{{>testimonial}}
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+    <meta name="description" content="{{ data.site.meta.description }}" />
+    <meta http-equiv="refresh" content="time; URL=it" />
+    <title>{{ data.site.title }}</title>
+		<!-- Favicon -->
+    <link href="/assets/images/favicon.png" rel="shortcut icon">
+	</head>
+  <body>
+    <a href="/it">{{ lookup data.site.title @root.locale }}</a>
+  </body>
+</html>

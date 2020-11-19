@@ -1,7 +1,7 @@
 							<div class="desc2 animate-box">
 								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
-                  <h2>{{ data.pages.welcome.title }}</h2>
-                  <h3>{{ data.pages.welcome.summary }}</h3>
+                  <h2>{{ lookup data.pages.welcome.title @root.locale }}</h2>
+                  <h3>{{ lookup data.pages.welcome.summary @root.locale }}</h3>
 								</div>
 							</div>
 

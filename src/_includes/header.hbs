@@ -7,20 +7,10 @@
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
               <li class="active"><a href="/">Home</a></li>
-              <!--
-							<li>
-								<a href="vacation.html" class="fh5co-sub-ddown">Vacations</a>
-								<ul class="fh5co-sub-menu">
-									<li><a href="#">Family</a></li>
-									<li><a href="#">CSS3 &amp; HTML5</a></li>
-									<li><a href="#">Angular JS</a></li>
-									<li><a href="#">Node JS</a></li>
-									<li><a href="#">Django &amp; Python</a></li>
-								</ul>
-                </li>
-              -->
-              <li><a href="{{ data.pages.prices.slug }}">{{ data.pages.prices.title }}</a></li>
-						</ul>
+              <li><a href="{{ @root.locale }}/{{ data.pages.prices.slug }}">{{ lookup data.pages.prices.title @root.locale }}</a></li>
+              <li><a href="{{ localeSwitch 'it' }}">it</a></li>
+              <li><a href="{{ localeSwitch 'en' }}">en</a></li>
+            </ul>
 					</nav>
 				</div>
 			</div>
