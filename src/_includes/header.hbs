@@ -1,4 +1,4 @@
-		<header id="fh5co-header-section" class="sticky-banner">
+    <header id="fh5co-header-section" class="sticky-banner">
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
@@ -7,7 +7,9 @@
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
               <li class="active"><a href="/">Home</a></li>
+              <li><a href="{{ @root.locale }}/{{ data.pages.rooms.slug }}">{{ lookup data.pages.rooms.title @root.locale }}</a></li>
               <li><a href="{{ @root.locale }}/{{ data.pages.prices.slug }}">{{ lookup data.pages.prices.title @root.locale }}</a></li>
+              <li><a href="{{ @root.locale }}/{{ data.pages.contacts.slug }}">{{ lookup data.pages.contacts.title @root.locale }}</a></li>
               <li><a href="{{ localeSwitch 'it' }}">it</a></li>
               <li><a href="{{ localeSwitch 'en' }}">en</a></li>
             </ul>

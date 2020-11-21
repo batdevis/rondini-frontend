@@ -33,6 +33,17 @@
         "it": "I prezzi si riferiscono in totale a notte.",
         "en": "Prices are total per night"
       }
+    },
+    "rooms": {
+      "slug": "rooms",
+      "title": {
+        "en": "Rooms and apartments",
+        "it": "Stanze e appartamenti"
+      },
+      "summary": {
+        "it": "Disponiamo di stanze singole, doppie e locali fino a 5 posti letto, tutti con bagno privato ed acesso autonomo.",
+        "en": "We have both single and double rooms with private bathroom and independent access."
+      }
     }
   }
 }
