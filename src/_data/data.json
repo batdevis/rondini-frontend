@@ -14,6 +14,11 @@
   },
   "pages": {
     "welcome": {
+      "name": "welcome",
+      "slug": {
+        "en": "",
+        "it": ""
+      },
       "title": {
         "en": "Agriturismo Le Rondini",
         "it": "Agriturismo Le Rondini"
@@ -24,7 +29,11 @@
       }
     },
     "prices": {
-      "slug": "prices",
+      "name": "prices",
+      "slug": {
+        "en": "prices",
+        "it": "prezzi"
+      },
       "title": {
         "en": "Our prices",
         "it": "I nostri prezzi"
@@ -35,10 +44,29 @@
       }
     },
     "rooms": {
-      "slug": "rooms",
+      "name": "rooms",
+      "slug": {
+        "en": "rooms-and-apartments",
+        "it": "stanze-e-appartamenti"
+      },
       "title": {
         "en": "Rooms and apartments",
         "it": "Stanze e appartamenti"
+      },
+      "summary": {
+        "it": "Disponiamo di stanze singole, doppie e locali fino a 5 posti letto, tutti con bagno privato ed acesso autonomo.",
+        "en": "We have both single and double rooms with private bathroom and independent access."
+      }
+    },
+    "contacts": {
+      "name": "contacts",
+      "slug": {
+        "en": "contacts",
+        "it": "contatti"
+      },
+      "title": {
+        "en": "Contacts",
+        "it": "Contatti"
       },
       "summary": {
         "it": "Disponiamo di stanze singole, doppie e locali fino a 5 posti letto, tutti con bagno privato ed acesso autonomo.",

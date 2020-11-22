@@ -1,4 +1,10 @@
-{{>header }}
-{{>hero }}
+---
+permalink: "{{ @root.locale }}/{{ lookup data.pages.rooms.slug @root.locale }}/"
+pg: "rooms"
+---
+{{#with data.pages.rooms }}
+  {{>header pg=. }}
+  {{>hero pg=. }}
+{{/with }}
 {{>products }}
 {{>footer }}

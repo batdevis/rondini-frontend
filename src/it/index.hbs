@@ -1,6 +1,7 @@
-{{>header }}
-
-{{>hero }}
+{{#with data.pages.welcome }}
+  {{>header pg=. }}
+  {{>hero pg=. }}
+{{/with }}
 {{>hot}}
 {{>features}}
 {{>portfolio}}

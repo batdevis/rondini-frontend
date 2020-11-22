@@ -1,5 +1,10 @@
-{{>header }}
-{{>hero }}
+---
+permalink: "{{ @root.locale }}/{{ lookup data.pages.contacts.slug @root.locale }}/"
+---
+{{#with data.pages.contacts }}
+  {{>header pg=. }}
+  {{>hero pg=. }}
+{{/with }}
 {{>contact_form }}
 {{>testimonial }}
 {{>map }}

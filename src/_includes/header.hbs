@@ -6,17 +6,24 @@
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="{{ @root.locale }}/{{ data.pages.rooms.slug }}">{{ lookup data.pages.rooms.title @root.locale }}</a></li>
-              <li><a href="{{ @root.locale }}/{{ data.pages.prices.slug }}">{{ lookup data.pages.prices.title @root.locale }}</a></li>
-              <li><a href="{{ @root.locale }}/{{ data.pages.contacts.slug }}">{{ lookup data.pages.contacts.title @root.locale }}</a></li>
-              <li><a href="{{ localeSwitch 'it' }}">it</a></li>
-              <li><a href="{{ localeSwitch 'en' }}">en</a></li>
+              <li{{#if (isActive @root.data.pages.welcome this) }} class="active"{{/if }}>
+                <a href="/">Home</a>
+              </li>
+              <li{{#if (isActive @root.data.pages.rooms this) }} class="active"{{/if }}>
+                {{{ pgLink @root.data.pages.rooms @root.locale }}}
+              </li>
+              <li{{#if (isActive @root.data.pages.prices this) }} class="active"{{/if }}>
+                {{{ pgLink @root.data.pages.prices @root.locale }}}
+              </li>
+              <li{{#if (isActive @root.data.pages.contacts this) }} class="active"{{/if }}>
+                {{{ pgLink @root.data.pages.contacts @root.locale }}}
+              </li>
+              <li><a href="{{ pgUrl . "it" }}">it</a></li>
+              <li><a href="{{ pgUrl . "en" }}">en</a></li>
             </ul>
 					</nav>
 				</div>
 			</div>
 		</header>
-
 		<!-- end:header-top -->
 
