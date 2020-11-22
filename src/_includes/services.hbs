@@ -7,84 +7,19 @@
 					</div>
 				</div>
 				<div class="row row-bottom-padded-md">
-					<div class="col-md-6 animate-box">
-						<div class="car">
-							<div class="one-4">
-								<h3>Economy</h3>
-								<span class="price">$100<small> / day</small></span>
-								<span class="price">$200<small> / week</small></span>
-								<span class="price">$250<small> / mos.</small></span>
-								<span class="price">$350<small> Total (Tax incl.)</small></span>
-							</div>
-							<div class="one-1" style="background-image: url(images/car-1.jpg);">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="car">
-							<div class="one-4">
-								<h3>Economy</h3>
-								<span class="price">$100<small> / day</small></span>
-								<span class="price">$200<small> / week</small></span>
-								<span class="price">$250<small> / mos.</small></span>
-								<span class="price">$350<small> Total (Tax incl.)</small></span>
-							</div>
-							<div class="one-1" style="background-image: url(images/car-2.jpg);">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="car">
-							<div class="one-4">
-								<h3>Luxury</h3>
-								<span class="price">$100<small> / day</small></span>
-								<span class="price">$200<small> / week</small></span>
-								<span class="price">$250<small> / mos.</small></span>
-								<span class="price">$350<small> Total (Tax incl.)</small></span>
-							</div>
-							<div class="one-1" style="background-image: url(images/car-3.jpg);">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="car">
-							<div class="one-4">
-								<h3>Economy</h3>
-								<span class="price">$100<small> / day</small></span>
-								<span class="price">$200<small> / week</small></span>
-								<span class="price">$250<small> / mos.</small></span>
-								<span class="price">$350<small> Total (Tax incl.)</small></span>
-							</div>
-							<div class="one-1" style="background-image: url(images/car-4.jpg);">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="car">
-							<div class="one-4">
-								<h3>Economy</h3>
-								<span class="price">$100<small> / day</small></span>
-								<span class="price">$200<small> / week</small></span>
-								<span class="price">$250<small> / mos.</small></span>
-								<span class="price">$350<small> Total (Tax incl.)</small></span>
-							</div>
-							<div class="one-1" style="background-image: url(images/car-5.jpg);">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="car">
-							<div class="one-4">
-								<h3>Economy</h3>
-								<span class="price">$100<small> / day</small></span>
-								<span class="price">$200<small> / week</small></span>
-								<span class="price">$250<small> / mos.</small></span>
-								<span class="price">$350<small> Total (Tax incl.)</small></span>
-							</div>
-							<div class="one-1" style="background-image: url(images/car-6.jpg);">
-							</div>
-						</div>
-					</div>
+          {{#each data.pricetable }}
+            <div class="col-md-6 animate-box">
+              <div class="car">
+                <div class="one-4">
+                  <h3>{{ lookup this.title @root.locale }}</h3>
+                  <small>{{ lookup this.summary @root.locale }}</small>
+                  <span class="price">{{ this.value }}</span>
+                </div>
+                <div class="one-1" style="background-image: url(images/car-1.jpg);">
+                </div>
+              </div>
+            </div>
+          {{/each }}
 				</div>
 			</div>
 		</div>

@@ -73,5 +73,84 @@
         "en": "We have both single and double rooms with private bathroom and independent access."
       }
     }
-  }
+  },
+  "pricetable": [
+    {
+      "title": {
+        "it": "Stanze singole",
+        "en": "Single rooms"
+      },
+      "summary": {
+        "it": "da",
+        "en": "from"
+      },
+      "value": "€30"
+    },
+    {
+      "title": {
+        "it": "Stanze doppie",
+        "en": "Double rooms"
+      },
+      "summary": {
+        "it": "da",
+        "en": "from"
+      },
+      "value": "€50"
+    },
+    {
+      "title": {
+        "it": "Stanze triple",
+        "en": "Triple rooms"
+      },
+      "summary": {
+        "it": "da",
+        "en": "from"
+      },
+      "value": "€75"
+    },
+    {
+      "title": {
+        "it": "Appartamenti singoli",
+        "en": "Single apartments"
+      },
+      "summary": {
+        "it": "da",
+        "en": "from"
+      },
+      "value": "€40"
+    },
+    {
+      "title": {
+        "it": "Appartamenti doppi",
+        "en": "Double apartments"
+      },
+      "summary": {
+        "it": "da",
+        "en": "from"
+      },
+      "value": "€60"
+    },
+    {
+      "title": {
+        "it": "Appartamenti tripli",
+        "en": "Tripli apartments"
+      },
+      "summary": {
+        "it": "da",
+        "en": "from"
+      },
+      "value": "€80"
+    },
+    {
+      "title": {
+        "it": "Appartamenti quadrupli",
+        "en": "Quadruple apartment"
+      },
+      "summary": {
+        "it": "da",
+        "en": "from"
+      },
+      "value": "€105"
+    }
+  ]
 }
