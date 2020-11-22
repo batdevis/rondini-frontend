@@ -2,8 +2,8 @@
 permalink: "{{ @root.locale }}/{{ lookup data.pages.contacts.slug @root.locale }}/"
 ---
 {{#with data.pages.contacts }}
-  {{>header pg=. }}
-  {{>hero pg=. }}
+  {{>header . }}
+  {{>hero . }}
 {{/with }}
 {{>contact_form }}
 {{>testimonial }}

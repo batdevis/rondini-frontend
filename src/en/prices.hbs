@@ -2,8 +2,8 @@
 permalink: "{{ @root.locale }}/{{ lookup data.pages.prices.slug @root.locale }}/"
 ---
 {{#with data.pages.prices }}
-  {{>header pg=. }}
-  {{!>hero pg=. }}
+  {{>header . }}
+  {{!>hero . }}
 {{/with }}
 {{>services }}
 {{>footer }}
