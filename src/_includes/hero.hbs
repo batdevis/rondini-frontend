@@ -7,9 +7,12 @@
 						<div class="row">
 							<div class="col-sm-5 col-md-5">
               </div>
-              {{#with . }}
-                {{>welcomebox .}}
-              {{/with }}
+							<div class="desc2 animate-box">
+								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
+                  <h2>{{ lookup this.title @root.locale }}</h2>
+                  <h3>{{ lookup this.summary @root.locale }}</h3>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

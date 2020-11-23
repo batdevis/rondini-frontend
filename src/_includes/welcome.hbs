@@ -1,0 +1,44 @@
+		<div id="fh5co-tours" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12 animate-box text-center">
+						<h2 class="heading-title">{{ lookup data.pages.welcome.title @root.locale }}</h2>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="row">
+							<div class="col-md-12">
+                <h4>{{ lookup data.pages.welcome.summary @root.locale }}</h4>
+                <div>{{{ lookup data.pages.welcome.body @root.locale }}}</div>
+							</div>
+              <!-- other bodies here
+							<div class="col-md-12">
+								<h4></h4>
+                <p></p>
+              </div>
+              -->
+						</div>
+          </div>
+					<div class="col-md-6 animate-box">
+						<img class="img-responsive" src="images/cover_bg_3.jpg" alt="travel">
+          </div>
+          <!--
+					<div class="col-md-8 col-md-offset-2 heading-section animate-box">
+            <h3 class="text-center">{{ lookup data.pages.welcome.title @root.locale }}</h3>
+            <h4>{{ lookup data.pages.welcome.summary @root.locale }}</h4>
+            <p>{{{ lookup data.pages.welcome.body @root.locale }}}</p>
+          </div>
+          -->
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center animate-box">
+            <p>
+              <a class="btn btn-primary btn-outline btn-lg" href="{{ pgUrl data.pages.rooms @root.locale }}">
+                {{ lookup data.t.our_services @root.locale }}<i class="icon-arrow-right22"></i>
+              </a>
+            </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+

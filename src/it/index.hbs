@@ -1,9 +1,11 @@
-{{#with data.pages.welcome }}
-  {{>header pg=. }}
-  {{>hero pg=. }}
+{{#with data.pages.home }}
+  {{>header . }}
+  {{>hero . }}
 {{/with }}
-{{>hot}}
-{{>features}}
-{{>portfolio}}
-{{>blog}}
-{{>testimonial}}
+{{>welcome}}
+{{!>hot}}
+{{!>features}}
+{{!>portfolio}}
+{{!>blog}}
+{{!>testimonial}}
+{{>footer }}
