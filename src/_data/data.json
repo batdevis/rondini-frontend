@@ -10,6 +10,36 @@
     },
     "meta": {
       "description": "Agriturismo Le Rondini stanze, appartamenti, alloggi a Limena, Padova"
+    },
+    "contacts": {
+      "address": {
+        "l": [
+          "Le Rondini s.s Agricola",
+          "p.iva 04037560283",
+          "Via Luigi Pierobon 123/a",
+          "35010 Limena (Padova)",
+          "049 884 2331 / 349 375 2068",
+          "posta@rondinipadova.it"
+        ],
+        "m": [
+          "Le Rondini s.s Agricola",
+          "p.iva 04037560283",
+          "Via Luigi Pierobon 123/a",
+          "35010 Limena (Padova)"
+        ],
+        "s": [
+          "Via Luigi Pierobon 123/a",
+          "35010 Limena (Padova)"
+        ]
+      },
+      "email": "posta@rondinipadova.it",
+      "phone": {
+        "work": "+39 049 884 2331",
+        "mobile": "+39 349 375 2068"
+      },
+      "whatsapp": "+39 349 375 2068",
+      "mapurl": "https://goo.gl/maps/tRorTEMgQopLr5Hw9",
+      "site": "http://rondinipadova.it"
     }
   },
   "pages": {
@@ -93,8 +123,8 @@
         "it": "Contatti"
       },
       "summary": {
-        "it": "Disponiamo di stanze singole, doppie e locali fino a 5 posti letto, tutti con bagno privato ed acesso autonomo.",
-        "en": "We have both single and double rooms with private bathroom and independent access."
+        "it": "",
+        "en": ""
       }
     }
   },
@@ -176,5 +206,27 @@
       },
       "value": "€105"
     }
-  ]
+  ],
+  "t": {
+    "name": {
+      "en": "Name",
+      "it": "Nome"
+    },
+    "email": {
+      "en": "Email",
+      "it": "Email"
+    },
+    "message": {
+      "en": "Message",
+      "it": "Messaggio"
+    },
+    "text": {
+      "en": "Text",
+      "it": "Testo"
+    },
+    "send_message": {
+      "en": "Send Message",
+      "it": "Invia"
+    }
+  }
 }

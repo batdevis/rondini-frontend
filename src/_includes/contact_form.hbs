@@ -2,42 +2,46 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Contact Information</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h3>{{ lookup data.pages.contacts.title @root.locale }}</h3>
+            <p>{{ lookup data.pages.contacts.summery @root.locale }}</p>
 					</div>
 				</div>
 				<form action="#">
 					<div class="row animate-box">
 						<div class="col-md-6">
-							<h3 class="section-title">Our Address</h3>
+            <!--
+              <h3 class="section-title">Our Address</h3>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="contact-info">
-								<li><i class="icon-location-pin"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
-								<li><i class="icon-phone2"></i>+ 1235 2355 98</li>
-								<li><i class="icon-mail"></i><a href="#">info@yoursite.com</a></li>
-								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+            -->
+              <ul class="contact-info">
+                <li><i class="icon-location-pin"></i>{{ data.site.contacts.address.m }}</li>
+                <li><i class="icon-phone2"></i>{{ data.site.contacts.phone.work }}</li>
+                <li><i class="icon-phone"></i>{{ data.site.contacts.phone.mobile }}</li>
+                <li><i class="icon-whatsapp"></i>{{ data.site.contacts.whatsapp }}</li>
+								<li><i class="icon-mail"></i><a href="{{ data.site.contacts.email }}">{{ data.site.contacts.email }}</a></li>
+								<li><i class="icon-globe2"></i><a href="{{ data.site.contacts.site }}" target="_blank">{{ data.site.contacts.site }}</a></li>
 							</ul>
 						</div>
 						<div class="col-md-6">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control" placeholder="{{ lookup data.t.name @root.locale }}">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email">
+										<input type="text" class="form-control" placeholder="{{ lookup data.t.email @root.locale }}">
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="{{ lookup data.t.message @root.locale }}"></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<input type="submit" value="Send Message" class="btn btn-primary">
+										<input type="submit" value="{{ lookup data.t.send_message @root.locale }}" class="btn btn-primary">
 									</div>
 								</div>
 							</div>
