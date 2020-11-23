@@ -4,9 +4,23 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 heading-section animate-box">
             <h3 class="text-center">{{ lookup data.pages.rooms.title @root.locale }}</h3>
-            <p>{{{ lookup data.pages.rooms.body @root.locale }}}</p>
 					</div>
 				</div>
+
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-6 animate-box">
+						<div class="row">
+							<div class="col-md-12">
+                <h4>{{ lookup data.pages.rooms.summary @root.locale }}</h4>
+                <div>{{{ lookup data.pages.rooms.body @root.locale }}}</div>
+							</div>
+						</div>
+          </div>
+					<div class="col-md-6 animate-box">
+            <img class="img-responsive" src="{{ data.pages.welcome.image.url }}" alt=""{{ lookup data.pages.welcome.title @root.locale }}>
+          </div>
+        </div>
+
 				<div class="row row-bottom-padded-md">
           {{#each data.pages.rooms.images }}
             <div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
