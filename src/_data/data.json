@@ -14,32 +14,32 @@
     "contacts": {
       "address": {
         "l": [
-          "Le Rondini s.s Agricola",
-          "p.iva 04037560283",
-          "Via Luigi Pierobon 123/a",
+          "My favorite place",
+          "p.iva 1234567890",
+          "Via Luigi xxxx 111",
           "35010 Limena (Padova)",
-          "049 884 2331 / 349 375 2068",
+          "111 111 1111 / 222 222 2222",
           "posta@rondinipadova.it"
         ],
         "m": [
-          "Le Rondini s.s Agricola",
-          "p.iva 04037560283",
-          "Via Luigi Pierobon 123/a",
+          "My favorite place",
+          "p.iva 1234567890",
+          "Via Luigi xxxx 111",
           "35010 Limena (Padova)"
         ],
         "s": [
-          "Via Luigi Pierobon 123/a",
+          "Via Luigi xxxx 111",
           "35010 Limena (Padova)"
         ]
       },
       "email": "posta@rondinipadova.it",
       "phone": {
-        "work": "+39 049 884 2331",
-        "mobile": "+39 349 375 2068"
+        "work": "+39 111 111 1111",
+        "mobile": "+39 222 222 2222"
       },
-      "whatsapp": "+39 349 375 2068",
-      "mapurl": "https://goo.gl/maps/tRorTEMgQopLr5Hw9",
-      "site": "http://rondinipadova.it"
+      "whatsapp": "+39 222 222 2222",
+      "mapurl": "https://goo.gl/maps/aaaaaaaaaaaaaa",
+      "site": "#"
     }
   },
   "pages": {
