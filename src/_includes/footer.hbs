@@ -7,7 +7,7 @@
               <p>{{ lookup data.site.summary @root.locale }}</p>
 						</div>
 						<div class="col-md-3 col-sm-3 col-xs-12 fh5co-footer-link">
-              <h3>{{ lookup data.t.menui.value @root.locale }}</h3>
+              <h3>{{ lookup data.t.menu.value @root.locale }}</h3>
 							<ul>
                 <li>{{{ pgLink @root.data.pages.rooms @root.locale }}}</li>
                 <li>{{{ pgLink @root.data.pages.prices @root.locale }}}</li>
@@ -17,7 +17,7 @@
 						<div class="col-md-3 col-sm-3 col-xs-12 fh5co-footer-link">
               <h3>{{ lookup data.t.contacts.value @root.locale }}</h3>
 							<ul>
-                {{#each data.site.contacts.address.l }}
+                {{#each (br2array @root.data.site.contacts.address.[0].address_data) }}
                   <li>{{ this }}</li>
                 {{/each }}
 							</ul>
@@ -27,12 +27,12 @@
 							<p class="fh5co-social-icons">
                 <ul>
                   <li>
-                    <a href="{{ data.site.contacts.social.facebook }}" target="_blank">
+                    <a href="{{ data.site.contacts.social.[0] }}" target="_blank">
                       <i class="icon-facebook2"></i> Facebook
                     </a>
                   </li>
                   <li>
-                    <a href="{{ data.site.contacts.social.instagram }}" target="_blank">
+                    <a href="{{ data.site.contacts.social.[1] }}" target="_blank">
                       <i class="icon-instagram"></i> Instagram
                     </a>
                   </li>

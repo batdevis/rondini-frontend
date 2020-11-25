@@ -43,7 +43,6 @@ module.exports = async function() {
     result[row.name] = row;
   });
   data.pages = result;
-  console.log(data);
 
   return data;
 };

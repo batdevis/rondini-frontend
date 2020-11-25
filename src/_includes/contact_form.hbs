@@ -3,7 +3,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
             <h3>{{ lookup data.pages.contacts.title @root.locale }}</h3>
-            <p>{{ lookup data.pages.contacts.summery @root.locale }}</p>
+            <p>{{ lookup data.pages.contacts.summary @root.locale }}</p>
 					</div>
 				</div>
 				<form action="#">
@@ -14,9 +14,14 @@
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             -->
               <ul class="contact-info">
-                <li><i class="icon-location-pin"></i>{{ data.site.contacts.address.m }}</li>
-                <li><i class="icon-phone2"></i>{{ data.site.contacts.phone.work }}</li>
-                <li><i class="icon-phone"></i>{{ data.site.contacts.phone.mobile }}</li>
+                <li>
+                  <i class="icon-location-pin"></i>
+                  {{#each (br2array @root.data.site.contacts.address.[1].address_data) }}
+                    {{ this }}<br/>
+                  {{/each }}
+                </li>
+                <li><i class="icon-phone2"></i>{{ data.site.contacts.phone_work }}</li>
+                <li><i class="icon-phone"></i>{{ data.site.contacts.phone_mobile }}</li>
                 <li><i class="icon-whatsapp"></i>{{ data.site.contacts.whatsapp }}</li>
 								<li><i class="icon-mail"></i><a href="{{ data.site.contacts.email }}">{{ data.site.contacts.email }}</a></li>
 								<li><i class="icon-globe2"></i><a href="{{ data.site.contacts.site }}" target="_blank">{{ data.site.contacts.site }}</a></li>

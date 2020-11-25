@@ -23,6 +23,15 @@ module.exports = function(eleventyConfig) {
     console.log(options.data.root);
   });
 
+  eleventyConfig.addHandlebarsShortcode("br2array", function(value, options) {
+    console.log("[br2array]", value);
+    return value ? value.split("\n") : [];
+  });
+
+  eleventyConfig.addHandlebarsShortcode("br2li", function(value, options) {
+    return `<ul><li>${value.split("\n").join("/<li><li>")}</li></ul>`;
+  });
+
   return {
     dir: {
       input: "src",
