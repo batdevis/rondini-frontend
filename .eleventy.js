@@ -24,7 +24,6 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addHandlebarsShortcode("br2array", function(value, options) {
-    console.log("[br2array]", value);
     return value ? value.split("\n") : [];
   });
 

@@ -43,6 +43,7 @@ module.exports = async function() {
     result[row.name] = row;
   });
   data.pages = result;
+  console.log(data.pages.rooms.image.formats.large.url);
 
   return data;
 };
