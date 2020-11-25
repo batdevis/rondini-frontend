@@ -26,22 +26,22 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-                    <input type="text" class="form-control" placeholder="{{ lookup data.t.name @root.locale }}">
+                    <input type="text" class="form-control" placeholder="{{ lookup data.t.name.value @root.locale }}">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="{{ lookup data.t.email @root.locale }}">
+										<input type="text" class="form-control" placeholder="{{ lookup data.t.email.value @root.locale }}">
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="{{ lookup data.t.message @root.locale }}"></textarea>
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="{{ lookup data.t.message.value @root.locale }}"></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<input type="submit" value="{{ lookup data.t.send_message @root.locale }}" class="btn btn-primary">
+										<input type="submit" value="{{ lookup data.t.send_message.value @root.locale }}" class="btn btn-primary">
 									</div>
 								</div>
 							</div>
