@@ -18,8 +18,8 @@
               <li{{#if (isActive @root.data.pages.contacts this) }} class="active"{{/if }}>
                 {{{ pgLink @root.data.pages.contacts @root.locale }}}
               </li>
-              <li><a href="{{ pgUrl . "it" }}">it</a></li>
-              <li><a href="{{ pgUrl . "en" }}">en</a></li>
+              <li><a href="{{ pgUrl this "it" }}">it</a></li>
+              <li><a href="{{ pgUrl this "en" }}">en</a></li>
             </ul>
 					</nav>
 				</div>
