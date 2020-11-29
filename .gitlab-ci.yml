@@ -1,0 +1,24 @@
+image: node:12
+
+stages:
+  - buildAndDeploy
+
+cache:
+  paths:
+    - node_modules/
+
+buildAndDeploy:
+  stage: buildAndDeploy
+  before_script:
+    - npm install --global firebase-tools
+  script:
+    - npm install
+    - npm run build
+    - firebase use --token $FIREBASE_TOKEN production
+    - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
+  artifacts:
+    paths:
+    - public
+  only:
+    - master
+
