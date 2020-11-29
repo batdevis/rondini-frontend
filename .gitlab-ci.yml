@@ -20,5 +20,5 @@ buildAndDeploy:
     paths:
     - public
   only:
-    - master
+    - main
 
