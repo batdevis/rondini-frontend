@@ -5,7 +5,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/css');
 
   eleventyConfig.addHandlebarsShortcode("pgUrl", function(pg, locale, options) {
-    return `${locale}/${pg.slug[locale]}`;
+    const slug = pg.slug[locale] || ''
+    return `${locale}/${slug}`;
   });
 
   eleventyConfig.addHandlebarsShortcode("pgLink", function(pg, locale, options) {
