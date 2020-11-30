@@ -1,0 +1,9 @@
+---
+permalink: "{{ @root.locale }}/{{ lookup data.pages.prices.slug @root.locale }}/"
+---
+{{#with data.pages.prices }}
+  {{>header . }}
+  {{!>hero . }}
+{{/with }}
+{{>services }}
+{{>footer }}

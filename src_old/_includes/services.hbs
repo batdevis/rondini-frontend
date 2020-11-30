@@ -1,0 +1,26 @@
+		<div id="fh5co-car" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+            <h3>{{ lookup data.pages.prices.title @root.locale }}</h3>
+						<p>{{ lookup data.pages.prices.summary @root.locale }}</p>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+          {{#each data.pricetable }}
+            <div class="col-md-6 animate-box">
+              <div class="car">
+                <div class="one-4">
+                  <h3>{{ lookup this.title @root.locale }}</h3>
+                  <small>{{ lookup this.summary @root.locale }}</small>
+                  <span class="price">{{ this.value }}</span>
+                </div>
+                <div class="one-1" style="background-image: url(images/car-1.jpg);">
+                </div>
+              </div>
+            </div>
+          {{/each }}
+				</div>
+			</div>
+		</div>
+
