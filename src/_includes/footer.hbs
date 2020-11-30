@@ -1,51 +1,17 @@
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row row-bottom-padded-md">
-						<div class="col-md-3 col-sm-3 col-xs-12 fh5co-footer-link">
-              <h3>{{ lookup data.site.title @root.locale }}</h3>
-              <p>{{ lookup data.site.summary @root.locale }}</p>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-12 fh5co-footer-link">
-              <h3>{{ lookup data.t.menu.value @root.locale }}</h3>
-							<ul>
-                <li>{{{ pgLink @root.data.pages.rooms @root.locale }}}</li>
-                <li>{{{ pgLink @root.data.pages.prices @root.locale }}}</li>
-                <li>{{{ pgLink @root.data.pages.contacts @root.locale }}}</li>
-							</ul>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-12 fh5co-footer-link">
-              <h3>{{ lookup data.t.contacts.value @root.locale }}</h3>
-							<ul>
-                {{#each (br2array @root.data.site.contacts.address.[0].address_data) }}
-                  <li>{{ this }}</li>
-                {{/each }}
-							</ul>
-						</div>
-						<div class="col-md-3 col-sm-3 col-xs-12 fh5co-footer-link">
-              <h3>{{ lookup data.t.social.value @root.locale }}</h3>
-							<p class="fh5co-social-icons">
-                <ul>
-                  <li>
-                    <a href="{{ data.site.contacts.social.[0] }}" target="_blank">
-                      <i class="icon-facebook2"></i> Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a href="{{ data.site.contacts.social.[1] }}" target="_blank">
-                      <i class="icon-instagram"></i> Instagram
-                    </a>
-                  </li>
-                </ul>
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p>Theme by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
 
