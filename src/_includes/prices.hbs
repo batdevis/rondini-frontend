@@ -1,0 +1,20 @@
+<!-- Two -->
+  <section class="wrapper style1 container special">
+    <div class="row">
+      {{#each @root.data.pricetable }}
+        <div class="col-4 col-12-narrower">
+
+          <section>
+            <span class="icon solid featured fa-check"></span>
+            <header>
+              <h3>{{ lookup this.title @root.locale }}</h3>
+            </header>
+            <small>{{ lookup this.summary @root.locale }}</small>
+            <p class="price">{{ this.value }}</p>
+          </section>
+
+        </div>
+      {{/each }}
+    </div>
+  </section>
+

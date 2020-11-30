@@ -1,5 +1,5 @@
 			<!-- Banner -->
-				<section id="banner">
+      <section id="banner" style="background-image: url('{{ this.image.formats.large.url }}')">
 
 					<!--
 						".inner" is set up as an inline-block so it automatically expands
@@ -7,23 +7,19 @@
 						automatically wrap lines, so be sure to use line breaks where
 						appropriate (<br />).
 					-->
+          {{#if (isActive @root.data.pages.home this) }}
 					<div class="inner">
 
 						<header>
-							<h2>TWENTY</h2>
+							<h2>{{ lookup this.title @root.locale }}</h2>
 						</header>
-						<p>This is <strong>Twenty</strong>, a free
-						<br />
-						responsive template
-						<br />
-						by <a href="http://html5up.net">HTML5 UP</a>.</p>
+						<p>{{ lookup this.summary @root.locale }}</p>
+						<div>{{ lookup this.body @root.locale }}</div>
 						<footer>
-							<ul class="buttons stacked">
-								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-							</ul>
 						</footer>
 
-					</div>
+          </div>
+          {{/if }}
 
 				</section>
 

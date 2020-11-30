@@ -1,0 +1,14 @@
+---
+permalink: "{{ @root.locale }}/{{ lookup data.pages.rooms.slug @root.locale }}/"
+---
+{{#with data.pages.rooms }}
+  {{>header . }}
+  {{> banner }}
+
+  <article id="main">
+    {{> hero }}
+    {{> services }}
+  </article>
+
+{{/with }}
+{{> footer }}
